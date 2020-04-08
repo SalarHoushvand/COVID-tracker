@@ -5,6 +5,7 @@ import { fetchData } from './api/';
 import styles from './App.module.css';
 
 import image from './images/image.png';
+import { Button } from '@material-ui/core';
 
 class App extends React.Component {
   state = {
@@ -32,7 +33,7 @@ class App extends React.Component {
         <img className={styles.image} src={image} alt="COVID-19" />
         <Cards data={data} />
         <CountryPicker handleCountryChange={this.handleCountryChange} />
-        <Chart data={data} country={country} /> 
+        <Button href="https://github.com/SalarHoushvand/">By S.Houshvand</Button>
       </div>
     );
   }
